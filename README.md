@@ -22,8 +22,11 @@ This component is under development, so its functionality has only been verified
 ## How to use this component
 
 STEP 1:
+
 To implement this component (library) in your ESP-IDF project, you just need to copy the files located in the components directory "i2c_manager" and "ssd1306" to your components folder and include them in your main code. The first component "i2c_manager" is a component that creates a structure (simulating an object) which sets up and configures a means to use the ESP32's I2C. This is done so that you can implement the I2C protocol as a master in other modules that require it, not only in the OLED SSD1306. The second component "ssd1306" is the controller for the OLED SSD1306, where the methods and functions used by the component are located.
+
 STEP 2:
+
 Once the components are included in your project and added to your main program, you just need to use the functions provided in this version, which allow you to print texts, integers, floats, and load images. In the main program of this repository, "main.c", you will find the main methods and functions that you can use. The operation, in broad terms, consists of internally creating an array to store the buffer of the OLED screen, which will later be transferred to the RAM of the SSD1306. As can be seen in "main.c", the methods involving buffer editing are executed first, and then, using the function I2C_SSD1306_update_display(ssd1306), they are sent to the OLED's RAM.
 
 ## Do you have any questions, suggestions, or have you found any errors?
