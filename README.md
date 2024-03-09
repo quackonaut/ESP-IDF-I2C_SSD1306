@@ -9,6 +9,7 @@ This is the first version of a driver developed to be used as a component for im
 Repositories used as a foundation for the development of this project:
 
 https://github.com/nopnop2002/esp-idf-ssd1306
+
 https://github.com/yanbe/ssd1306-esp-idf-i2c
 
 Datasheets used:
